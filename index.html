@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="mn">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tuguldurn@lab7:~$</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <iframe id="bg-video" class="bg-video" title="Дэвсгэр видео" tabindex="-1" aria-hidden="true"
+    src="https://www.youtube.com/embed/WL9EOfzoSsA?enablejsapi=1&start=180&autoplay=1&mute=1&controls=0&modestbranding=1&playsinline=1"
+    allow="autoplay; encrypted-media" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__spinner" aria-hidden="true"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="site-header__brand">
+      <pre><kbd>tuguldurn@lab7:~$ whoami</kbd>
+Намжилдорж Төгөлдөр</pre>
+    </div>
+    <nav id="menu" class="site-header__nav" aria-label="Хуудасны цэс">
+      <a class="site-header__link" href="#about">~/about</a>
+      <a class="site-header__link" href="#fortune">~/fortune</a>
+      <a class="site-header__link" href="#skills">~/skills</a>
+      <a class="site-header__link" href="#favorites">~/favorites</a>
+      <a class="site-header__link" href="#gallery">~/faq</a>
+      <a class="site-header__link" href="#media">~/media</a>
+      <a class="site-header__link" href="#contact">~/contact</a>
+    </nav>
+  </header>
+
+  <div class="page">
+    <main class="page__main">
+      <section id="about" class="panel panel--about">
+        <h1>Сайн уу 👋</h1>
+        <p>
+          Намайг <strong>Намжилдорж Төгөлдөр</strong> гэдэг. Мэдээллийн
+          технологийн сургуульд <mark>3-р курст</mark> сурдаг. Шинэ зүйл
+          суралцах, бусдад сурсан мэдсэнээ хуваалцах дуртай 😇. Танилцахад
+          таатай байна. ✨
+        </p>
+      </section>
+
+      <section id="skills" class="panel panel--skills">
+        <h2>🧰 Юу мэддэг вэ?</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3><kbd>./html_css</kbd></h3>
+            <p>Вэб хуудасны бүтэц, загварыг хийхэд ашигладаг.</p>
+            <meter class="meter" min="0" max="10" value="6">6/10</meter>
+          </article>
+          <article class="card">
+            <h3><kbd>./git_github</kbd></h3>
+            <p>
+              Кодоо байршуулахад ашигладаг.
+              <mark>GitHub Pages</mark> дээр кодоо үнэгүй байршуулдаг.
+            </p>
+            <meter class="meter" min="0" max="10" value="4">4/10</meter>
+          </article>
+          <article class="card">
+            <h3><kbd>./cpp</kbd></h3>
+            <p>
+              Програмчлалын бодлого бодох дуртай. Шинэ бүтэц, алгоритмаар
+              асуудал шийдэх нь сонирхолтой.
+            </p>
+            <meter class="meter" min="0" max="10" value="3">3/10</meter>
+          </article>
+        </div>
+      </section>
+
+      <section id="favorites" class="panel panel--favorites">
+        <h2>⭐ Дуртай зүйлс</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3><kbd>language/</kbd></h3>
+            <p>Дуртай хэл: <strong>C++</strong></p>
+          </article>
+          <article class="card">
+            <h3><kbd>frameworks/</kbd></h3>
+            <p>React · Vue · Next.js · Nuxt</p>
+          </article>
+          <article class="card">
+            <h3><kbd>security/</kbd></h3>
+            <p>CTF тэмцээн</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="gallery" class="panel panel--gallery">
+        <h2>💬 Асуулт хариулт</h2>
+        <ul class="gallery">
+          <li class="gallery__item" style="--i: 0">
+            <article class="flip-card" tabindex="0">
+              <div class="flip-card__inner">
+                <h3 class="flip-card__face flip-card__face--front"><kbd class="flip-card__badge">?</kbd> Яагаад вэб хөгжүүлэлт сонирхдог вэ?</h3>
+                <p class="flip-card__face flip-card__face--back">Код бичээд хөтөч дээр үр дүнг нь шууд харж болдог нь надад таалагддаг.</p>
+              </div>
+            </article>
+          </li>
+          <li class="gallery__item" style="--i: 1">
+            <article class="flip-card" tabindex="0">
+              <div class="flip-card__inner">
+                <h3 class="flip-card__face flip-card__face--front"><kbd class="flip-card__badge">?</kbd> Одоо юу сурч байна вэ?</h3>
+                <p class="flip-card__face flip-card__face--back">Япон хэл <strong>dekiru nihongo</strong> номноос сурж байгаа. Ирэх 12 сард N5 шалгалт өгнө.</p>
+              </div>
+            </article>
+          </li>
+          <li class="gallery__item" style="--i: 2">
+            <article class="flip-card" tabindex="0">
+              <div class="flip-card__inner">
+                <h3 class="flip-card__face flip-card__face--front"><kbd class="flip-card__badge">?</kbd> Ойрын зорилго юу вэ?</h3>
+                <p class="flip-card__face flip-card__face--back">OverTheWire-ийн CTF дасгалуудыг шийдэх зорилготой.</p>
+              </div>
+            </article>
+          </li>
+          <li class="gallery__item" style="--i: 3">
+            <article class="flip-card" tabindex="0">
+              <div class="flip-card__inner">
+                <h3 class="flip-card__face flip-card__face--front"><kbd class="flip-card__badge">?</kbd> Дуртай програмчлалын хэл?</h3>
+                <p class="flip-card__face flip-card__face--back"><strong>C++</strong> — бодлого бодоход хамгийн их ашигладаг.</p>
+              </div>
+            </article>
+          </li>
+          <li class="gallery__item" style="--i: 4">
+            <article class="flip-card" tabindex="0">
+              <div class="flip-card__inner">
+                <h3 class="flip-card__face flip-card__face--front"><kbd class="flip-card__badge">?</kbd> Кодоо хаана байршуулдаг вэ?</h3>
+                <p class="flip-card__face flip-card__face--back">Git/GitHub ашиглаж, <mark>GitHub Pages</mark> дээр үнэгүй байршуулдаг.</p>
+              </div>
+            </article>
+          </li>
+          <li class="gallery__item" style="--i: 5">
+            <article class="flip-card" tabindex="0">
+              <div class="flip-card__inner">
+                <h3 class="flip-card__face flip-card__face--front"><kbd class="flip-card__badge">?</kbd> Чөлөөт цагаараа юу хийдэг вэ?</h3>
+                <p class="flip-card__face flip-card__face--back">CTF тэмцээнд оролцож, шинэ технологи судалдаг.</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section id="media" class="panel panel--media">
+        <h2>🎬 Youtube хаяг</h2>
+        <div class="media">
+          <figure class="media__item">
+            <iframe class="media__video" title="Надад таалагдсан видео (YouTube Shorts)" loading="lazy"
+              src="https://www.youtube-nocookie.com/embed/RkWHsgUqphY"
+              allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+            <figcaption class="media__caption">Subscribe хийгээрэй 😊</figcaption>
+          </figure>
+        </div>
+      </section>
+
+    </main>
+
+    <aside class="page__aside">
+      <section id="fortune" class="panel panel--fortune">
+        <h2><kbd>$ fortune</kbd></h2>
+        <blockquote class="quote">“Оролдлого ихт оройд нь”</blockquote>
+      </section>
+
+      <section id="contact" class="panel panel--contact">
+        <h2>📬 Холбоо барих</h2>
+        <p>
+          <a href="https://github.com/Tuugii0526" target="_blank" rel="noopener">github.com/Tuugii0526</a>
+        </p>
+        <form class="form" onsubmit="return false;">
+          <label class="form__field">Нэр: <input class="form__control" type="text" name="name" /></label>
+          <label class="form__field">Захиа: <textarea class="form__control form__control--textarea" name="msg" rows="3"></textarea></label>
+          <button class="form__submit" type="submit">Явуулах</button>
+        </form>
+      </section>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <pre><kbd>$ exit</kbd>
+logout</pre>
+    <small class="site-footer__copy">© 2026 Намжилдорж Төгөлдөр</small>
+    <a class="site-footer__link" href="#about">↑ дээш гарах</a>
+  </footer>
+
+
+  <script>
+    function onYouTubeIframeAPIReady() {
+      new YT.Player("bg-video", {
+        events: {
+          onReady: function (e) { e.target.mute(); e.target.playVideo(); },
+          onStateChange: function (e) {
+            if (e.data === YT.PlayerState.ENDED) { e.target.seekTo(180); e.target.playVideo(); }
+          }
+        }
+      });
+    }
+  </script>
+  <script src="https://www.youtube.com/iframe_api" async></script>
+</body>
+
+</html>
