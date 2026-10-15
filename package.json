@@ -1,7 +1,7 @@
 {
   "name": "lab7",
   "version": "1.0.0",
-  "description": "Lab 7 - Sass/SCSS refactor of the lab 6 site",
+  "description": "Lab 7",
   "scripts": {
     "build:dev": "sass --style=expanded --source-map scss/main.scss css/style.css",
     "build": "sass --style=compressed --no-source-map scss/main.scss css/style.css",
